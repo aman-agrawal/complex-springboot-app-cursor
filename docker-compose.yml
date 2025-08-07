@@ -25,6 +25,7 @@ services:
   # PostgreSQL Database
   postgres:
     image: postgres:15-alpine
+    read_only: true
     environment:
       - POSTGRES_DB=complexapp
       - POSTGRES_USER=postgres
